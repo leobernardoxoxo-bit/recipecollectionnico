@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta
+name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>
+Recipe Collection
+</title>
+
+<!-- STYLE -->
+<link
+rel="stylesheet"
+href="style.css">
+
+<!-- FONT AWESOME -->
+<link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+/>
+
+<!-- GOOGLE FONT -->
+<link
+href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+rel="stylesheet">
+
+</head>
+
+<body>
+
+<!-- =========================
+LOADER
+========================= -->
+
+<div
+class="loader"
+id="loader">
+
+<div class="loader-content">
+
+<div class="loader-circle"></div>
+
+<h1>
+🍲 Recipe Collection
+</h1>
+
+</div>
+
+</div>
+
+<!-- =========================
+LOGIN PAGE
+========================= -->
+
+<section
+class="login-page"
+id="loginPage">
+
+<div class="login-box">
+
+<div class="logo">
+
+<h1>
+🍴 Food Paradise
+</h1>
+
+<p>
+Login to continue your food adventure
+</p>
+
+</div>
+
+<div class="input-box">
+
+<input
+type="email"
+id="email"
+placeholder="Enter Email">
+
+<i class="fa-solid fa-envelope"></i>
+
+</div>
+
+<div class="input-box">
+
+<input
+type="password"
+id="password"
+placeholder="Enter Password">
+
+<i class="fa-solid fa-lock"></i>
+
+</div>
+
+<button
+class="glow-btn"
+onclick="login()">
+
+Login
+
+</button>
+
+</div>
+
+</section>
+
+<!-- =========================
+DASHBOARD
+========================= -->
+
+<section
+class="dashboard"
+id="dashboard">
+
+<!-- TOP BAR -->
+
+<div class="top-bar">
+
+<h2>
+🍽 Food Dashboard
+</h2>
+
+<button
+class="logout-btn"
+onclick="logout()">
+
+Logout
+
+</button>
+
+</div>
+
+<!-- FAVORITES BUTTON -->
+
+<button
+class="glow-btn profile-toggle"
+onclick="openProfile()">
+
+❤️ Favorite Recipes
+
+</button>
+
+<!-- FAVORITES PANEL -->
+
+<div
+class="profile"
+id="profile">
+
+<h2>
+❤️ Your Favorite Recipes
+</h2>
+
+<div id="favoriteList">
+
+<p class="empty-fav">
+No favorite recipes yet
+</p>
+
+</div>
+
+</div>
+
+<!-- BACKGROUND SECTION -->
+
+<h2 class="section-title">
+
+✨ Choose Background
+
+</h2>
+
+<div class="background-grid">
+
+<div class="bg-card">
+<img
+src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?q=80&w=1200">
+<span>
+Healthy Table
+</span>
+</div>
+
+<div class="bg-card">
+<img
+src="https://images.unsplash.com/photo-1482049016688-2d3e1b311543?q=80&w=1200">
+<span>
+Kitchen Style
+</span>
+</div>
+
+<div class="bg-card">
+<img
+src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=1200">
+<span>
+Restaurant Mood
+</span>
+</div>
+
+<div class="bg-card">
+<img
+src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?q=80&w=1200">
+<span>
+Fresh Meals
+</span>
+</div>
+
+<div class="bg-card">
+<img
+src="https://images.unsplash.com/photo-1466637574441-749b8f19452f?q=80&w=1200">
+<span>
+Garden Fresh
+</span>
+</div>
+
+<div class="bg-card">
+<img
+src="https://images.unsplash.com/photo-1498837167922-ddd27525d352?q=80&w=1200">
+<span>
+Breakfast Mood
+</span>
+</div>
+
+</div>
+
+<!-- RECIPES -->
+
+<h2 class="section-title">
+
+🔥 Popular Recipes
+
+</h2>
+
+<div
+class="recipe-grid"
+id="recipeGrid">
+
+<!-- RECIPES LOAD HERE -->
+
+</div>
+
+</section>
+
+<!-- =========================
+RECIPE VIEW
+========================= -->
+
+<section
+class="recipe-view"
+id="recipeView">
+
+<div class="recipe-view-box">
+
+<div id="recipeDetails">
+
+<!-- DETAILS LOAD HERE -->
+
+</div>
+
+</div>
+
+</section>
+
+<!-- =========================
+SCRIPT
+========================= -->
+
+<script src="script.js"></script>
+
+</body>
+</html>
